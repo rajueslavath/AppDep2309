@@ -39,7 +39,7 @@ function EditProfile() {
         
     };
     
-    let JSONData = await fetch("http://localhost:4567/updateProfile",reqOptions);
+    let JSONData = await fetch("/updateProfile",reqOptions);
 
     let JSOData = await JSONData.json();
 
@@ -67,7 +67,7 @@ useEffect(()=>{
     genderInputRef.current.value = storeObj.loginDetails.gender;
     maritalInputRef.current.value= storeObj.loginDetails.marital;
     emailInputRef.current.value= storeObj.loginDetails.email;
-    setProfilePicPath(`http://localhost:4567/${storeObj.loginDetails.profilePic}`)
+    setProfilePicPath(`/${storeObj.loginDetails.profilePic}`)
     
 
 },[]);
