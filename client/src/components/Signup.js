@@ -36,7 +36,7 @@ function Signup() {
         
     };
     
-    let JSONData = await fetch("/signup",reqOptions);
+    let JSONData = await fetch("http://localhost:4567/signup",reqOptions);
 
     let JSOData = await JSONData.json();
 
