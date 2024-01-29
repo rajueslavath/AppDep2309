@@ -33,7 +33,7 @@ function Login() {
         
     };
     
-    let JSONData = await fetch("http://localhost:4567/validateToken",reqOptions);
+    let JSONData = await fetch("/validateToken",reqOptions);
 
     let JSOData = await JSONData.json();
     console.log(JSOData);
@@ -60,7 +60,7 @@ function Login() {
         
     };
     
-    let JSONData = await fetch("http://localhost:4567/login",reqOptions);
+    let JSONData = await fetch("/login",reqOptions);
 
     let JSOData = await JSONData.json();
     console.log(JSOData);
